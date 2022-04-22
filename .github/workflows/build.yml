@@ -20,12 +20,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout DIDKit repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: didkit
 
     - name: Checkout SSI library
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: spruceid/ssi
         path: ssi
@@ -102,7 +102,7 @@ jobs:
       run: examples/binary-signing/index.sh verify examples/binary-signing/hello.txt examples/binary-signing/hello-vc.jsonld
 
     - name: Checkout vc-http-api v0.0.1
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: spruceid/vc-http-api
         path: vc-http-api
@@ -115,7 +115,7 @@ jobs:
         ./vendors/spruce/test.sh
 
     - name: Checkout VC HTTP API Test Suite
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: w3c-ccg/vc-http-api-test-suite
         path: didkit/http/tests/vc-http-api/vc-http-api-test-suite
@@ -171,12 +171,12 @@ jobs:
     runs-on: macos-latest
     steps:
     - name: Checkout DIDKit repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         path: didkit
 
     - name: Checkout SSI library
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         repository: spruceid/ssi
         path: ssi
